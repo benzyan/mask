@@ -1,0 +1,128 @@
+html{
+    font-size: 62.5%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    font-size: 2.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+h2{
+  font-size: 4.5rem;  
+}
+h3{
+    font-size: 2.3rem;
+}
+p{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin:2rem 0rem 2rem 0rem;
+}
+li{
+  font-size:2rem; 
+  margin-right:2rem;
+}
+a{
+    color:white;
+    text-decoration: none; 
+}
+
+@import "home";
+@import"features";
+@import"soon";
+@import "footer";
+
+@media screen and(max-width: 1200px){
+    html{
+        font-size:50%;
+    }
+    nav{
+      #logo{
+          flex:1;
+      } 
+      ul{
+          li{
+              margin-left:5rem; 
+          }
+      } 
+    }
+    .showcase{
+       grid-template-columns: 10% 1fr 10%;
+       img{
+           width: 100%;
+           object-fit: contain;
+       } 
+       img,
+       h2,
+       .info{
+           grid-column: 2/3;
+           text-align: center;
+           line-height: 3rem;
+       }
+    }
+  .features{
+      align-items: center;
+ 
+      h2{
+          margin:5rem 0rem 5rem 0rem;
+
+      }
+      .cards {
+    
+        flex-direction: column;
+   
+          width: 70%;
+      
+      .card{
+         margin: 6rem 2rem;
+          overflow: hidden;
+          h3{
+            text-align: center;
+            color:red;
+          }
+          p{
+              line-height: 2rem;
+              margin-bottom: 2rem;
+          }
+      }
+    }
+  }  
+
+.soon{
+    overflow: hidden;
+}
+img{
+    width:100%;
+}
+ .new{
+    font-size: 5rem;
+    text-align:center;
+    margin-top: 3rem;
+    border-radius: 50%;
+    border:3px solid red;
+    padding:2rem;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

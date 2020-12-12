@@ -1,0 +1,52 @@
+.features-container{
+    background:rgb(28, 29, 29); 
+    position:relative; 
+    z-index: 0;
+    overflow: hidden;
+}
+.wave {
+    position: absolute;
+    left:0;
+    bottom: -10%;
+    width: 110%;
+    z-index: -1;
+}
+.features{
+    min-height: 90vh;
+    width: 100%;
+    margin: auto 3rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color:rgb(246, 252, 246);
+    .cards{
+        display:flex;
+        justify-content: space-between;
+        color:rgb(0, 0, 0);
+        .card{
+            margin:0rem 8rem;
+            display: flex;
+            flex-direction: column;
+            background:rgb(248, 245, 245);
+            border-radius: 4rem;
+            
+            h3{
+                margin: 2rem 0rem 1rem 0rem;
+                letter-spacing: .2rem;
+                text-align: center;
+            }
+            p{
+                font-size: 1.8rem;
+                letter-spacing: .2rem;
+                margin:0rem 2rem;
+                line-height: 2.3rem;
+                
+            }
+            img{
+                object-fit: cover;
+               
+            }
+            
+        }
+    }
+}
